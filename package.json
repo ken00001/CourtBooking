@@ -18,5 +18,8 @@
     "mongoose": "^7.5.0",
     "react-country-flag": "^3.1.0",
     "react-world-flags": "^1.5.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
