@@ -23,11 +23,11 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/player', require('./routes/players'));
 app.use('/api/booking', require('./routes/booking'));
 
-app.get('/', (req, res) => {
-    res.send('Hello from Express!');
-});
-// Your code
-if (process.env.NODE_ENV === "production") {
+// app.get('/', (req, res) => {
+//     res.send('Hello from Express!');
+// });
+// // Your code
+// if (process.env.NODE_ENV === "production") {
     const path = require("path");
     app.use(express.static(path.resolve(__dirname, 'client', 'build')));
     app.get("*", (req, res) => {
@@ -37,7 +37,7 @@ if (process.env.NODE_ENV === "production") {
             }
         });
     })
-}
+// }
 // Your code
 
 
